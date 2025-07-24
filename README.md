@@ -1,4 +1,4 @@
-Currently it on working process ----->
+Currently it's on working process ----->
 
 ## 🌱 Project Name: **HopeBridge** — NGO Donation & Volunteer Management Platform
 
