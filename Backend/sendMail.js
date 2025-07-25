@@ -1,32 +1,32 @@
+require('dotenv').config();
 const express = require('express');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
 
 const app = express();
 app.use(express.json());
-app.use(cors()); // Allow requests from frontend
+app.use(cors());
 
 app.post('/send-mail', async (req, res) => {
     const { to, subject, text, html } = req.body;
 
-    // Basic validation
     if (!to || !subject || !text) {
         return res.status(400).json({ error: "To, subject, and text are required." });
     }
 
     let transporter = nodemailer.createTransport({
-        host: "mail.ljh.com.sg",
-        port: 587,
+        host: process.env.SMTP_HOST,
+        port: process.env.SMTP_PORT,
         secure: false,
         auth: {
-            user: "notifications@ljh.com.sg",
-            pass: "Ljh#251607"
+            user: process.env.SMTP_USER,
+            pass: process.env.SMTP_PASS
         }
     });
 
     try {
         let info = await transporter.sendMail({
-            from: '"LJH Notifications" <notifications@ljh.com.sg>',
+            from: process.env.SMTP_USER,
             to,
             subject,
             text,
@@ -40,7 +40,4 @@ app.post('/send-mail', async (req, res) => {
     }
 });
 
-const PORT = 5000;
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
+module.exports = app;

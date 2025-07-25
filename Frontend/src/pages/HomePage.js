@@ -1,6 +1,4 @@
 import { useState } from "react";
-import { Header } from "../components/Header";
-import { Counter } from "../components/Counter";
 
 export function HomePage() {
     const [to, setTo] = useState("");
@@ -47,8 +45,6 @@ export function HomePage() {
                 <button type="submit">Send Mail</button>
             </form>
             {status && <div>{status}</div>}
-            <Header heading="Word Counter" subHeading="To use WordCounter, Paste text in the given textarea box below" />
-            <Counter />
         </main>
     );
 }
