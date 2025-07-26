@@ -39,7 +39,7 @@ export function HomePage() {
                     <input type="text" value={subject} onChange={e => setSubject(e.target.value)} required />
                 </div>
                 <div>
-                    <label>Message: </label>
+                    <label>Messages that i have to send: </label>
                     <textarea value={text} onChange={e => setText(e.target.value)} required />
                 </div>
                 <button type="submit">Send Mail</button>
