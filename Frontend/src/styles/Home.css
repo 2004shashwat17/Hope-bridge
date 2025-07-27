@@ -1,0 +1,185 @@
+/* Responsive and attractive styles for Home page */
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.bg-gradient-to-br {
+  background: linear-gradient(135deg, #fef9c3 0%, #bbf7d0 100%);
+}
+
+.max-w-2xl {
+  max-width: 42rem;
+}
+
+.rounded-xl {
+  border-radius: 1rem;
+}
+
+.shadow-2xl {
+  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.w-24 {
+  width: 6rem;
+  height: 6rem;
+}
+
+.animate-bounce {
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0);}
+  50% { transform: translateY(-20px);}
+}
+
+.text-5xl {
+  font-size: 3rem;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.text-green-700 {
+  color: #15803d;
+}
+
+.text-yellow-600 {
+  color: #ca8a04;
+}
+
+.text-blue-600 {
+  color: #2563eb;
+}
+
+.text-gray-700 {
+  color: #374151;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.shadow-lg {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.10);
+}
+
+.transition {
+  transition: all 0.2s;
+}
+
+.transform {
+  transform: none;
+}
+
+.hover\:scale-105:hover {
+  transform: scale(1.05);
+}
+
+.bg-green-500 {
+  background-color: #22c55e;
+}
+
+.bg-green-600:hover {
+  background-color: #16a34a;
+}
+
+.bg-blue-500 {
+  background-color: #3b82f6;
+}
+
+.bg-blue-600:hover {
+  background-color: #2563eb;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.text-gray-400 {
+  color: #9ca3af;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.sm\:flex-row {
+  flex-direction: row;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
