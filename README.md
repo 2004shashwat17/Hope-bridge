@@ -78,30 +78,6 @@ Currently it's on working process ----->
 - Admin dashboard with filters/sorting
 - Auto-reminder emails (e.g., “1 year since your last donation”)
 
----
-
-### 🗂 File Structure (basic idea)
-
-```
-arduino
-CopyEdit
-hopebridge/
-├── frontend/ (Next.js)
-│   ├── pages/
-│   ├── components/
-│   ├── utils/
-│   └── styles/
-├── backend/ (Node.js + Express)
-│   ├── routes/
-│   ├── controllers/
-│   ├── models/
-│   ├── middleware/
-│   └── config/
-└── .env
-
-```
-
----
 ### 📬 Email Templates Ideas
 
 - **Donation Confirmation**
